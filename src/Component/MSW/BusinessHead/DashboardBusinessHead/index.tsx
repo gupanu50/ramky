@@ -2971,21 +2971,21 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date1).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // // @ts-ignore
-    // const result = await ApiClient.createApiClient().postbusinesscombine(
-    //   payload
-    // );
-    const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
     // @ts-ignore
     const result = await ApiClient.createApiClient().postbusinesscombine(
-      params
+      payload
     );
+    // const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // // @ts-ignore
+    // const result = await ApiClient.createApiClient().postbusinesscombine(
+    //   params
+    // );
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3020,19 +3020,19 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date1).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().postbusinesswteprocessed(
-    //   payload
-    // );
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
     const result = await ApiClient.createApiClient().postbusinesswteprocessed(
-      params
+      payload
     );
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result = await ApiClient.createApiClient().postbusinesswteprocessed(
+    //   params
+    // );
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3075,17 +3075,17 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date1).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result =
-    //   await ApiClient.createApiClient().buisnessheadcollectiontrend(payload);
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
     const result =
-      await ApiClient.createApiClient().buisnessheadcollectiontrend(params);
+      await ApiClient.createApiClient().buisnessheadcollectiontrend(payload);
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result =
+    //   await ApiClient.createApiClient().buisnessheadcollectiontrend(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3138,17 +3138,17 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date1).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result =
-    //   await ApiClient.createApiClient().buisnessheadprocessingtrend(payload);
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
     const result =
-      await ApiClient.createApiClient().buisnessheadprocessingtrend(params);
+      await ApiClient.createApiClient().buisnessheadprocessingtrend(payload);
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result =
+    //   await ApiClient.createApiClient().buisnessheadprocessingtrend(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3201,19 +3201,19 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date1).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().buisnessheadwtetrend(
-    //   payload
-    // );
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
     const result = await ApiClient.createApiClient().buisnessheadwtetrend(
-      params
+      payload
     );
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result = await ApiClient.createApiClient().buisnessheadwtetrend(
+    //   params
+    // );
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3239,21 +3239,21 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date1).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result =
-    //   await ApiClient.createApiClient().SBUheaddistributeComposttrendgraph(
-    //     payload
-    //   );
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
     const result =
       await ApiClient.createApiClient().SBUheaddistributeComposttrendgraph(
-        params
+        payload
       );
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result =
+    //   await ApiClient.createApiClient().SBUheaddistributeComposttrendgraph(
+    //     params
+    //   );
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3306,21 +3306,21 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date1).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result =
-    //   await ApiClient.createApiClient().SBUheaddistributeiRDFtrendgraph(
-    //     payload
-    //   );
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
     const result =
       await ApiClient.createApiClient().SBUheaddistributeiRDFtrendgraph(
-        params
+        payload
       );
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result =
+    //   await ApiClient.createApiClient().SBUheaddistributeiRDFtrendgraph(
+    //     params
+    //   );
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3373,21 +3373,21 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date1).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result =
-    //   await ApiClient.createApiClient().SBUheaddistributeRecyclabletrendgraph(
-    //     payload
-    //   );
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
     const result =
       await ApiClient.createApiClient().SBUheaddistributeRecyclabletrendgraph(
-        params
+        payload
       );
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result =
+    //   await ApiClient.createApiClient().SBUheaddistributeRecyclabletrendgraph(
+    //     params
+    //   );
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3440,21 +3440,21 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date1).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result =
-    //   await ApiClient.createApiClient().SBUheaddistributeinertstrendgraph(
-    //     payload
-    //   );
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
     const result =
       await ApiClient.createApiClient().SBUheaddistributeinertstrendgraph(
-        params
+        payload
       );
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result =
+    //   await ApiClient.createApiClient().SBUheaddistributeinertstrendgraph(
+    //     params
+    //   );
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3533,15 +3533,15 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date3).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date4).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().mswsbuheadhistory(payload);
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
-    const result = await ApiClient.createApiClient().mswsbuheadhistory(params);
+    const result = await ApiClient.createApiClient().mswsbuheadhistory(payload);
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result = await ApiClient.createApiClient().mswsbuheadhistory(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3561,15 +3561,15 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date3).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date4).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().mswsbuheadhistory(payload);
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
-    const result = await ApiClient.createApiClient().mswsbuheadhistory(params);
+    const result = await ApiClient.createApiClient().mswsbuheadhistory(payload);
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result = await ApiClient.createApiClient().mswsbuheadhistory(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3611,19 +3611,19 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date5).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date6).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().mswsbuheadcollection(
-    //   payload
-    // );
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
     const result = await ApiClient.createApiClient().mswsbuheadcollection(
-      params
+      payload
     );
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result = await ApiClient.createApiClient().mswsbuheadcollection(
+    //   params
+    // );
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3642,19 +3642,19 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date7).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date8).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().mswsbuheadprocessed(
-    //   payload
-    // );
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
     const result = await ApiClient.createApiClient().mswsbuheadprocessed(
-      params
+      payload
     );
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result = await ApiClient.createApiClient().mswsbuheadprocessed(
+    //   params
+    // );
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3673,19 +3673,19 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date9).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date10).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().mswsbuheaddistribute(
-    //   payload
-    // );
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
     const result = await ApiClient.createApiClient().mswsbuheaddistribute(
-      params
+      payload
     );
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result = await ApiClient.createApiClient().mswsbuheaddistribute(
+    //   params
+    // );
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3704,15 +3704,15 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date11).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date12).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().mswsbuheadwte(payload);
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
-    const result = await ApiClient.createApiClient().mswsbuheadwte(params);
+    const result = await ApiClient.createApiClient().mswsbuheadwte(payload);
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result = await ApiClient.createApiClient().mswsbuheadwte(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3732,19 +3732,19 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date5).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date6).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().mswsbuheadcollection(
-    //   payload
-    // );
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
     const result = await ApiClient.createApiClient().mswsbuheadcollection(
-      params
+      payload
     );
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result = await ApiClient.createApiClient().mswsbuheadcollection(
+    //   params
+    // );
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3769,19 +3769,19 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date7).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date8).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().mswsbuheadprocessed(
-    //   payload
-    // );
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
     const result = await ApiClient.createApiClient().mswsbuheadprocessed(
-      params
+      payload
     );
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result = await ApiClient.createApiClient().mswsbuheadprocessed(
+    //   params
+    // );
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3810,19 +3810,19 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date9).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date10).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().mswsbuheaddistribute(
-    //   payload
-    // );
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
     const result = await ApiClient.createApiClient().mswsbuheaddistribute(
-      params
+      payload
     );
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result = await ApiClient.createApiClient().mswsbuheaddistribute(
+    //   params
+    // );
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3854,15 +3854,15 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date11).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date12).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().mswsbuheadwte(payload);
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
-    const result = await ApiClient.createApiClient().mswsbuheadwte(params);
+    const result = await ApiClient.createApiClient().mswsbuheadwte(payload);
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result = await ApiClient.createApiClient().mswsbuheadwte(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3894,19 +3894,19 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date5).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date6).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().mswsbuheadcollection(
-    //   payload
-    // );
-     const params = {start:previousDay,end:time1,siteName:location};
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
     const result = await ApiClient.createApiClient().mswsbuheadcollection(
-      params
+      payload
     );
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result = await ApiClient.createApiClient().mswsbuheadcollection(
+    //   params
+    // );
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3931,20 +3931,20 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date7).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date8).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
 
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().mswsbuheadprocessed(
-    //   payload
-    // );
-     const params = {start:previousDay,end:time1,siteName:location};
     setLoading(true);
     const result = await ApiClient.createApiClient().mswsbuheadprocessed(
-      params
+      payload
     );
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result = await ApiClient.createApiClient().mswsbuheadprocessed(
+    //   params
+    // );
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3973,20 +3973,20 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date9).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date10).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
 
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().mswsbuheaddistribute(
-    //   payload
-    // );
-     const params = {start:previousDay,end:time1,siteName:location};
     setLoading(true);
     const result = await ApiClient.createApiClient().mswsbuheaddistribute(
-      params
+      payload
     );
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result = await ApiClient.createApiClient().mswsbuheaddistribute(
+    //   params
+    // );
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -4018,16 +4018,16 @@ const DashboardBusinessHead = (props: any) => {
     var previousDay =
       moment(date11).format("YYYY-MM-DD 00:00:00:000") + " " + `Z`;
     var time1 = moment(date12).format("YYYY-MM-DD 23:59:00:000") + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
 
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().mswsbuheadwte(payload);
-     const params = {start:previousDay,end:time1,siteName:location};
     setLoading(true);
-    const result = await ApiClient.createApiClient().mswsbuheadwte(params);
+    const result = await ApiClient.createApiClient().mswsbuheadwte(payload);
+    //  const params = {start:previousDay,end:time1,siteName:location};
+    // setLoading(true);
+    // const result = await ApiClient.createApiClient().mswsbuheadwte(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -5237,7 +5237,6 @@ const DashboardBusinessHead = (props: any) => {
               <TouchableOpacity
                 onPress={() => {
                   setShowModal7(false);
-                  setActiveSections([]);
                 }}
               >
                 <Image

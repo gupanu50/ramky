@@ -2493,13 +2493,13 @@ const Dashboard = (props: any) => {
   const iwmSummary = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().IWMproductcatalogue(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().IWMproductcatalogue(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().IWMproductcatalogue(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().IWMproductcatalogue(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2541,13 +2541,13 @@ const Dashboard = (props: any) => {
   const wasteSummaryApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmsiteheadpostsummary(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmsiteheadpostsummary(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmsiteheadpostsummary(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().iwmsiteheadpostsummary(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2565,13 +2565,13 @@ const Dashboard = (props: any) => {
   const collectionTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmsiteheadcollectiontrend(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmsiteheadcollectiontrend(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmsiteheadcollectiontrend(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().iwmsiteheadcollectiontrend(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2607,13 +2607,13 @@ const Dashboard = (props: any) => {
   const disposalTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmsiteheadanalysistrend(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmsiteheadanalysistrend(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmsiteheadanalysistrend(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().iwmsiteheadanalysistrend(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2649,13 +2649,13 @@ const Dashboard = (props: any) => {
   const leftOverStockTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmsiteheadleftoverstocktrend(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmsiteheadleftoverstocktrend(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmsiteheadleftoverstocktrend(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().iwmsiteheadleftoverstocktrend(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2691,13 +2691,13 @@ const Dashboard = (props: any) => {
   const iwmTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmtrend(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmtrend(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmtrend(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().iwmtrend(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2725,13 +2725,13 @@ const Dashboard = (props: any) => {
   const historyApi = async (date3, date4, date2) => {
     var previousDay = (moment(date3).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date4).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmsitehistory(payload);
- const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmsitehistory(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmsitehistory(payload);
+//  const params ={start:previousDay,end:time1,siteName:city};
+//     const result = await ApiClient.createApiClient().iwmsitehistory(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2750,13 +2750,13 @@ const Dashboard = (props: any) => {
   const historyDownloadApi = async (date3, date4, date2) => {
     var previousDay = (moment(date3).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date4).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmsitehistory(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmsitehistory(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmsitehistory(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().iwmsitehistory(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2790,13 +2790,13 @@ const Dashboard = (props: any) => {
   const collectedWasteLeftMenuApi = async (date5, date6, date2) => {
     var previousDay = (moment(date5).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date6).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmSiteHeadCollection(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmSiteHeadCollection(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmSiteHeadCollection(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().iwmSiteHeadCollection(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2814,13 +2814,13 @@ const Dashboard = (props: any) => {
   const disposalWasteLeftMenuApi = async (date7, date8, date2) => {
     var previousDay = (moment(date7).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date8).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmSiteHeadAnalysis(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmSiteHeadAnalysis(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmSiteHeadAnalysis(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().iwmSiteHeadAnalysis(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2838,13 +2838,13 @@ const Dashboard = (props: any) => {
   const leftOverStockWasteLeftMenuApi = async (date9, date10, date2) => {
     var previousDay = (moment(date9).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date10).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmSiteHeadLeftOverStock(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmSiteHeadLeftOverStock(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmSiteHeadLeftOverStock(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().iwmSiteHeadLeftOverStock(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2863,13 +2863,13 @@ const Dashboard = (props: any) => {
   const collectedWasteLeftMenuDownloadApi = async (date5, date6, date2) => {
     var previousDay = (moment(date5).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date6).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmSiteHeadCollection(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmSiteHeadCollection(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmSiteHeadCollection(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().iwmSiteHeadCollection(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2892,13 +2892,13 @@ const Dashboard = (props: any) => {
   const disposalWasteLeftMenuDownloadingApi = async (date7, date8, date2) => {
     var previousDay = (moment(date7).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date8).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmSiteHeadAnalysis(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmSiteHeadAnalysis(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmSiteHeadAnalysis(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().iwmSiteHeadAnalysis(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2925,13 +2925,13 @@ const Dashboard = (props: any) => {
   const leftOverStockWasteLeftMenuDownloadingApi = async (date9, date10, date2) => {
     var previousDay = (moment(date9).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date10).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmSiteHeadLeftOverStock(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmSiteHeadLeftOverStock(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmSiteHeadLeftOverStock(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().iwmSiteHeadLeftOverStock(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2959,13 +2959,13 @@ const Dashboard = (props: any) => {
   const collectedWasteLeftMenuSharingApi = async (date5, date6, date2) => {
     var previousDay = (moment(date5).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date6).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmSiteHeadCollection(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmSiteHeadCollection(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmSiteHeadCollection(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().iwmSiteHeadCollection(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2988,13 +2988,13 @@ const Dashboard = (props: any) => {
   const disposalWasteLeftMenuSharingApi = async (date7, date8, date2) => {
     var previousDay = (moment(date7).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date8).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmSiteHeadAnalysis(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmSiteHeadAnalysis(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmSiteHeadAnalysis(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().iwmSiteHeadAnalysis(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3021,13 +3021,13 @@ const Dashboard = (props: any) => {
   const leftOverStockWasteLeftMenuSharingApi = async (date9, date10, date2) => {
     var previousDay = (moment(date9).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date10).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmSiteHeadLeftOverStock(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmSiteHeadLeftOverStock(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmSiteHeadLeftOverStock(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().iwmSiteHeadLeftOverStock(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3055,13 +3055,13 @@ const Dashboard = (props: any) => {
   const recyclablesIncomingWasteApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmSiteHeadCollectionRecyclables(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmSiteHeadCollectionRecyclables(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmSiteHeadCollectionRecyclables(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().iwmSiteHeadCollectionRecyclables(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3097,13 +3097,13 @@ const Dashboard = (props: any) => {
   const recyclablesAnalysisWasteApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().iwmSiteHeadAnalysisRecyclables(payload);
-     const params ={start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().iwmSiteHeadAnalysisRecyclables(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().iwmSiteHeadAnalysisRecyclables(payload);
+    //  const params ={start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().iwmSiteHeadAnalysisRecyclables(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore

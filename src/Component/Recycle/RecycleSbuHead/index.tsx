@@ -2164,6 +2164,7 @@ const DashboardRecycleSbuHead = (props: any) => {
     const params = {start:previousDay,end:time1,department:city,siteName:value};
     // setLoading(true);
     const result = await ApiClient.createApiClient().recyclesbuheadprocessedtrend(params);
+    console.log("mynewdata", result);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2268,7 +2269,7 @@ const DashboardRecycleSbuHead = (props: any) => {
         });
       }
       // @ts-ignore
-    
+      console.log("disssssss", displayArr);
       // @ts-ignore
       const sortedData = displayArr.sort((a, b) => {
         // @ts-ignore
@@ -2294,7 +2295,8 @@ const DashboardRecycleSbuHead = (props: any) => {
     const result = await ApiClient.createApiClient().recyclesbuheadwastesummary(
       params
     );
-   
+    console.log("resultdata==>>", result);
+    console.log("bodyy dataa====>", payload);
     // @ts-ignore
     if (result.status && result.data.status === true) {
 
@@ -2349,7 +2351,7 @@ const DashboardRecycleSbuHead = (props: any) => {
         array2.push(array1);
         array1 = [];
       }
-     
+      console.log("Array2", array2);
       setArray(array2);
     } else {
       setRdf([]);
@@ -2395,7 +2397,7 @@ const DashboardRecycleSbuHead = (props: any) => {
         array2.push(array1);
         array1 = [];
       }
-   
+      console.log("Array2", array2);
       setArray2(array2);
     } else {
       setRdf3([]);
@@ -2410,7 +2412,7 @@ const DashboardRecycleSbuHead = (props: any) => {
     city != "All" ? payload.append("siteName", value) : null;
     const params = {start:previousDay,end:time1,department:city,siteName:value};
     const result = await ApiClient.createApiClient().recyclesbuheadproductsummary(params);
-   
+    console.log("result dataaaa", result);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2440,7 +2442,7 @@ const DashboardRecycleSbuHead = (props: any) => {
         array2.push(array1);
         array1 = [];
       }
-    
+      console.log("Array2====>>>>>>>>>", array2);
       setArray1(array2);
     } else {
       setRdf1([]);
@@ -2468,7 +2470,7 @@ const DashboardRecycleSbuHead = (props: any) => {
               params
             )
             : null;
-    
+    console.log("history data====>>>>>>>>>>", result);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore

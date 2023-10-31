@@ -490,7 +490,7 @@ const Footer = (props: any) => {
     if (result.data && result.data.status === true) {
       // @ts-ignore
       showMessage({ message: result.data.message, type: "success" });
-      timeOut = setTimeout(getCollectionBmwApi, 200);
+      timeOut = setInterval(getCollectionBmwApi, 200);
     }
     else {
       showMessage({ message: "Data already exist for the selected Date", type: "danger" });
@@ -524,7 +524,7 @@ const Footer = (props: any) => {
     if (result.data && result.data.status === true) {
       // @ts-ignore
       showMessage({ message: result.data.message, type: "success" });
-      timeOut1 = setTimeout(getProcessingApi, 200);
+      timeOut1 = setInterval(getProcessingApi, 200);
     } else {
       showMessage({ message: "Data already exist for the selected Date", type: "danger" });
     }
@@ -565,7 +565,7 @@ const Footer = (props: any) => {
     if (result.data && result.data.status === true) {
       // @ts-ignore
       showMessage({ message: result.data.message, type: "success" });
-      timeOut2 = setTimeout(getDistributionApi, 200);
+      timeOut2 = setInterval(getDistributionApi, 200);
     } else {
       showMessage({ message: "Data already exist for the selected Date", type: "danger" });
     }
@@ -1137,7 +1137,6 @@ const Footer = (props: any) => {
                           onPress={() => {
                             {
                               collectSaveValidation();
-                          
                             }
                           }}
                         >

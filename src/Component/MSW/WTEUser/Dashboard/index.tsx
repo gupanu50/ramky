@@ -968,13 +968,13 @@ const DashboardWTE = (props: any) => {
   const rdfReceiptTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().rdfgenerationtrendgraph(payload);
-    const params = {start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().rdfgenerationtrendgraph(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result = await ApiClient.createApiClient().rdfgenerationtrendgraph(payload);
+    // const params = {start:previousDay,end:time1,siteName:location};
+    // const result = await ApiClient.createApiClient().rdfgenerationtrendgraph(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1010,13 +1010,13 @@ const DashboardWTE = (props: any) => {
   const rdfCombustedTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().energygenerationtrendgraph(payload);
-    const params = {start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().energygenerationtrendgraph(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result = await ApiClient.createApiClient().energygenerationtrendgraph(payload);
+    // const params = {start:previousDay,end:time1,siteName:location};
+    // const result = await ApiClient.createApiClient().energygenerationtrendgraph(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       //  @ts-ignore
@@ -1052,13 +1052,13 @@ const DashboardWTE = (props: any) => {
   const ashGenerationTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().ashgenerationtrendgraph(payload);
-    const params = {start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().ashgenerationtrendgraph(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result = await ApiClient.createApiClient().ashgenerationtrendgraph(payload);
+    // const params = {start:previousDay,end:time1,siteName:location};
+    // const result = await ApiClient.createApiClient().ashgenerationtrendgraph(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1120,13 +1120,13 @@ const DashboardWTE = (props: any) => {
   const historyApi = async (date3, date4, date2) => {
     var previousDay = (moment(date3).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date4).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().mswwtehistory(payload);
-    const params = {start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().mswwtehistory(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result = await ApiClient.createApiClient().mswwtehistory(payload);
+    // const params = {start:previousDay,end:time1,siteName:location};
+    // const result = await ApiClient.createApiClient().mswwtehistory(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1145,13 +1145,13 @@ const DashboardWTE = (props: any) => {
   const historyDownloadApi = async (date3, date4, date2) => {
     var previousDay = (moment(date3).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date4).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().mswwtehistory(payload);
-    const params = {start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().mswwtehistory(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result = await ApiClient.createApiClient().mswwtehistory(payload);
+    // const params = {start:previousDay,end:time1,siteName:location};
+    // const result = await ApiClient.createApiClient().mswwtehistory(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1160,7 +1160,7 @@ const DashboardWTE = (props: any) => {
         const arr = (result?.data?.data ?? []);
         let printArr = arr.map((d) => {
           let printObj = {
-            "Date": moment(d?.splitDate).format("DD/MM/YYYY"),
+            Date: d?.splitDate,
             "RDF Receipt": d?.rdfReceipt,
             "RDF Combusted": d?.rdfCombusted,
             "Ash Generated": d?.ashGenerated,

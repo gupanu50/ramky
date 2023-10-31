@@ -1351,13 +1351,13 @@ const DashboardCtUser = (props: any) => {
   const collectionTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().collectiontrendgraphct(payload);
-    const params = {start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().collectiontrendgraphct(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result = await ApiClient.createApiClient().collectiontrendgraphct(payload);
+    // const params = {start:previousDay,end:time1,siteName:location};
+    // const result = await ApiClient.createApiClient().collectiontrendgraphct(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1393,13 +1393,13 @@ const DashboardCtUser = (props: any) => {
   const processingTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().processingtrendgraphct(payload);
-    const params = {start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().processingtrendgraphct(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result = await ApiClient.createApiClient().processingtrendgraphct(payload);
+    // const params = {start:previousDay,end:time1,siteName:location};
+    // const result = await ApiClient.createApiClient().processingtrendgraphct(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1435,13 +1435,13 @@ const DashboardCtUser = (props: any) => {
   const distributionCompostTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().MswDistributeCompostOutflowct(payload);
-    const params = {start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().MswDistributeCompostOutflowct(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result = await ApiClient.createApiClient().MswDistributeCompostOutflowct(payload);
+    // const params = {start:previousDay,end:time1,siteName:location};
+    // const result = await ApiClient.createApiClient().MswDistributeCompostOutflowct(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1479,13 +1479,13 @@ const DashboardCtUser = (props: any) => {
   const distributionRdfTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().MswDistributeRDFOutflowct(payload);
-    const params = {start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().MswDistributeRDFOutflowct(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result = await ApiClient.createApiClient().MswDistributeRDFOutflowct(payload);
+    // const params = {start:previousDay,end:time1,siteName:location};
+    // const result = await ApiClient.createApiClient().MswDistributeRDFOutflowct(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1521,13 +1521,13 @@ const DashboardCtUser = (props: any) => {
   const distributionRecyclablesTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().MswDistributeRecyclablesOutflowct(payload);
-    const params = {start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().MswDistributeRecyclablesOutflowct(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result = await ApiClient.createApiClient().MswDistributeRecyclablesOutflowct(payload);
+    // const params = {start:previousDay,end:time1,siteName:location};
+    // const result = await ApiClient.createApiClient().MswDistributeRecyclablesOutflowct(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1563,13 +1563,13 @@ const DashboardCtUser = (props: any) => {
   const distributionInertsTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().MswDistributeInertsOutflowct(payload);
-    const params = {start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().MswDistributeInertsOutflowct(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result = await ApiClient.createApiClient().MswDistributeInertsOutflowct(payload);
+    // const params = {start:previousDay,end:time1,siteName:location};
+    // const result = await ApiClient.createApiClient().MswDistributeInertsOutflowct(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1632,13 +1632,13 @@ const DashboardCtUser = (props: any) => {
   const historyApi = async (date3, date4, date5) => {
     var previousDay = (moment(date3).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date4).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().historyDashboardCT(payload);
-    const params = {start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().historyDashboardCT(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result = await ApiClient.createApiClient().historyDashboardCT(payload);
+    // const params = {start:previousDay,end:time1,siteName:location};
+    // const result = await ApiClient.createApiClient().historyDashboardCT(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1657,13 +1657,13 @@ const DashboardCtUser = (props: any) => {
   const historyDownloadApi = async (date3, date4, date5) => {
     var previousDay = (moment(date3).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date4).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result: any = await ApiClient.createApiClient().historyDashboardCT(payload);
-    const params = {start:previousDay,end:time1,siteName:location};
-    const result: any = await ApiClient.createApiClient().historyDashboardCT(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result: any = await ApiClient.createApiClient().historyDashboardCT(payload);
+    // const params = {start:previousDay,end:time1,siteName:location};
+    // const result: any = await ApiClient.createApiClient().historyDashboardCT(params);
     if (result.status && result.data.status === true) {
       if ((result?.data?.data ?? []).length > 0) {
         const arr = (result?.data?.data ?? []);

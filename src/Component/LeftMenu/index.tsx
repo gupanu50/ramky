@@ -921,7 +921,9 @@ const LeftMenu = (props: any) => {
             {name}
           </ListItem.Title>
         </ListItem>
+
       </TouchableOpacity>
+
     );
   };
 

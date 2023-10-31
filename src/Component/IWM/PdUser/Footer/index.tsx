@@ -183,7 +183,7 @@ const Footer = (props: any) => {
     if (result.data && result.data.status === true) {
       // @ts-ignore
       showMessage({ message: result.data.message, type: "success" });
-      timeOut = setTimeout(getCollectionApi, 200);
+      timeOut = setInterval(getCollectionApi, 200);
     }
     else {
       showMessage({ message: "Data already exist for the selected Date", type: "danger" });
@@ -220,7 +220,7 @@ const Footer = (props: any) => {
     if (result.data && result.data.status === true) {
       // @ts-ignore
       showMessage({ message: result.data.message, type: "success" });
-      timeOut1 = setTimeout(getDisposalApi, 200);
+      timeOut1 = setInterval(getDisposalApi, 200);
     }
     else {
       showMessage({ message: "Data already exist for the selected Date", type: "danger" });
@@ -255,7 +255,7 @@ const Footer = (props: any) => {
     if (result.data && result.data.status === true) {
       // @ts-ignore
       showMessage({ message: result.data.message, type: "success" });
-      timeOut2 = setTimeout(getleftOverStockApi, 200);
+      timeOut2 = setInterval(getleftOverStockApi, 200);
     }
     else {
       showMessage({ message: "Data already exist for the selected Date", type: "danger" });
@@ -265,7 +265,7 @@ const Footer = (props: any) => {
   const getCollectionApi = async () => {
     const params = { siteName: siteName };
     const result = await Network.createApiClient().IWMcollectdashboard(params);
-
+    console.log("collectionfooter", result);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore

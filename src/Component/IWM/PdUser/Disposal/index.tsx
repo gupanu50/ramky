@@ -21,10 +21,10 @@ const Disposal = (props: any) => {
   };
   // ******************************GET Api********************
   const getDisposalApi = async () => {
-    // setLoading(true);
+    setLoading(true);
     const params = { siteName: location };
     const result = await ApiClient.createApiClient().IWManalysisdashboard(params);
-  
+    console.log("mydisposaltable",result);
     {/* @ts-ignore */ }
     if (result.status && result.data.status === true) {
 
@@ -56,7 +56,7 @@ const Disposal = (props: any) => {
       {/* @ts-ignore */ }
       setProcessingValue(displayArr);
     }
-    // setLoading(false);
+    setLoading(false);
   };
   return (
     <View >

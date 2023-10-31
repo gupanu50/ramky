@@ -2610,13 +2610,13 @@ const DashboardSiteHead = (props: any) => {
   const bmwSummary = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwsiteproductcatalogue(payload);
-       const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwsiteproductcatalogue(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwsiteproductcatalogue(payload);
+    //    const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwsiteproductcatalogue(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2656,13 +2656,13 @@ const DashboardSiteHead = (props: any) => {
   const wasteSummaryApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwsitewastesummary(payload);
-     const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwsitewastesummary(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwsitewastesummary(payload);
+    //  const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwsitewastesummary(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2680,13 +2680,13 @@ const DashboardSiteHead = (props: any) => {
   const collectionTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwsitecollectionsummary(payload);
-     const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwsitecollectionsummary(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwsitecollectionsummary(payload);
+    //  const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwsitecollectionsummary(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2722,13 +2722,13 @@ const DashboardSiteHead = (props: any) => {
   const processingTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwsiteprocessingsummary(payload);
-     const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwsiteprocessingsummary(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwsiteprocessingsummary(payload);
+    //  const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwsiteprocessingsummary(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2764,14 +2764,14 @@ const DashboardSiteHead = (props: any) => {
   const recyclablesTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
 
-    // const result = await ApiClient.createApiClient().bmwsiterecyclablesummary(payload);
-     const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwsiterecyclablesummary(params);
+    const result = await ApiClient.createApiClient().bmwsiterecyclablesummary(payload);
+    //  const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwsiterecyclablesummary(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2807,13 +2807,13 @@ const DashboardSiteHead = (props: any) => {
   const bmwTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwsitewtetrend(payload);
-     const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwsitewtetrend(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwsitewtetrend(payload);
+    //  const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwsitewtetrend(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2864,13 +2864,13 @@ const DashboardSiteHead = (props: any) => {
   const historyApi = async (date3, date4, date2) => {
     var previousDay = (moment(date3).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date4).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwsiteheadhistory(payload);
-       const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwsiteheadhistory(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwsiteheadhistory(payload);
+    //    const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwsiteheadhistory(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2889,13 +2889,13 @@ const DashboardSiteHead = (props: any) => {
   const historyDownloadApi = async (date3, date4, date2) => {
     var previousDay = (moment(date3).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date4).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwsiteheadhistory(payload);
-       const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwsiteheadhistory(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwsiteheadhistory(payload);
+    //    const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwsiteheadhistory(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2928,13 +2928,13 @@ const DashboardSiteHead = (props: any) => {
   const collectedWasteLeftMenuApi = async (date5, date6, date2) => {
     var previousDay = (moment(date5).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date6).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwsiteheadcollection(payload);
-       const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwsiteheadcollection(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwsiteheadcollection(payload);
+    //    const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwsiteheadcollection(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2952,13 +2952,13 @@ const DashboardSiteHead = (props: any) => {
   const processedWasteLeftMenuApi = async (date7, date8, date2) => {
     var previousDay = (moment(date7).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date8).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwsiteheadprocessed(payload);
-       const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwsiteheadprocessed(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwsiteheadprocessed(payload);
+    //    const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwsiteheadprocessed(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -2976,13 +2976,13 @@ const DashboardSiteHead = (props: any) => {
   const distributeWasteLeftMenuApi = async (date9, date10, date2) => {
     var previousDay = (moment(date9).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date10).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwsiteheaddistribute(payload);
-       const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwsiteheaddistribute(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwsiteheaddistribute(payload);
+    //    const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwsiteheaddistribute(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3001,13 +3001,13 @@ const DashboardSiteHead = (props: any) => {
   const collectedWasteLeftMenuDownloadApi = async (date5, date6, date2) => {
     var previousDay = (moment(date5).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date6).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwsiteheadcollection(payload);
-       const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwsiteheadcollection(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwsiteheadcollection(payload);
+    //    const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwsiteheadcollection(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3030,13 +3030,13 @@ const DashboardSiteHead = (props: any) => {
   const processedWasteLeftMenuDownloadApi = async (date7, date8, date2) => {
     var previousDay = (moment(date7).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date8).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwsiteheadprocessed(payload);
-       const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwsiteheadprocessed(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwsiteheadprocessed(payload);
+    //    const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwsiteheadprocessed(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3061,13 +3061,13 @@ const DashboardSiteHead = (props: any) => {
   const distributeWasteLeftMenuDownloadApi = async (date9, date10, date2) => {
     var previousDay = (moment(date9).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date10).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwsiteheaddistribute(payload);
-       const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwsiteheaddistribute(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwsiteheaddistribute(payload);
+    //    const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwsiteheaddistribute(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3096,13 +3096,13 @@ const DashboardSiteHead = (props: any) => {
   const collectedWasteLeftMenuSharingApi = async (date5, date6, date2) => {
     var previousDay = (moment(date5).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date6).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwsiteheadcollection(payload);
-       const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwsiteheadcollection(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwsiteheadcollection(payload);
+    //    const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwsiteheadcollection(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3125,13 +3125,13 @@ const DashboardSiteHead = (props: any) => {
   const processedWasteLeftMenuSharingApi = async (date7, date8, date2) => {
     var previousDay = (moment(date7).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date8).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwsiteheadprocessed(payload);
-       const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwsiteheadprocessed(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwsiteheadprocessed(payload);
+    //    const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwsiteheadprocessed(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3156,13 +3156,13 @@ const DashboardSiteHead = (props: any) => {
   const distributeWasteLeftMenuSharingApi = async (date9, date10, date2) => {
     var previousDay = (moment(date9).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date10).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwsiteheaddistribute(payload);
-       const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwsiteheaddistribute(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwsiteheaddistribute(payload);
+    //    const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwsiteheaddistribute(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3191,13 +3191,13 @@ const DashboardSiteHead = (props: any) => {
   const plasticRecyclablesApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwSiteHeadPlastic(payload);
-       const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwSiteHeadPlastic(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwSiteHeadPlastic(payload);
+    //    const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwSiteHeadPlastic(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3233,13 +3233,13 @@ const DashboardSiteHead = (props: any) => {
   const glassRecyclablesApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwSiteHeadGlass(payload);
-       const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwSiteHeadGlass(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwSiteHeadGlass(payload);
+    //    const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwSiteHeadGlass(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3275,13 +3275,13 @@ const DashboardSiteHead = (props: any) => {
   const cardboardRecyclablesApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", city);
-    // const result = await ApiClient.createApiClient().bmwSiteHeadCardboard(payload);
-       const params = {start:previousDay,end:time1,siteName:city};
-    const result = await ApiClient.createApiClient().bmwSiteHeadCardboard(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", city);
+    const result = await ApiClient.createApiClient().bmwSiteHeadCardboard(payload);
+    //    const params = {start:previousDay,end:time1,siteName:city};
+    // const result = await ApiClient.createApiClient().bmwSiteHeadCardboard(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore

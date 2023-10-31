@@ -1089,15 +1089,12 @@ const DashboardPdUser = (props: any) => {
   const productCatalogue = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
-  
-    const params = {start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().cdproductcatalogue(params);
-    // const result = await ApiClient.createApiClient().productCatalogue(params);
+    const result = await ApiClient.createApiClient().cdproductcatalogue(payload);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1139,15 +1136,12 @@ const DashboardPdUser = (props: any) => {
   const historyApi = async (date3, date4, date2) => {
     var previousDay = (moment(date3).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date4).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().mswpdhistory(payload);
-    const params = {start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().mswpdhistory(params);
-    console.log("datallll",result);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    setLoading(true);
+    const result = await ApiClient.createApiClient().mswpdhistory(payload);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1160,22 +1154,19 @@ const DashboardPdUser = (props: any) => {
     else {
       setHistoryValue([]);
     }
-    // setLoading(false);
+    setLoading(false);
   };
   // ***********************History Download API Methods******************
   // eslint-disable-next-line no-unused-vars
   const historyDownloadApi = async (date3, date4, date2) => {
     var previousDay = (moment(date3).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date4).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // setLoading(true);
-    // const result = await ApiClient.createApiClient().mswpdhistory(payload);
-    const params = {start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().mswpdhistory(params);
-    console.log("newdatahidstory",result);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    setLoading(true);
+    const result = await ApiClient.createApiClient().mswpdhistory(payload);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1184,7 +1175,7 @@ const DashboardPdUser = (props: any) => {
         const arr = (result?.data?.data ?? []);
         let printArr = arr.map((d) => {
           let printObj = {
-            "Date": moment(d?.splitDate).format("DD/MM/YYYY"),
+            "Date": d?.splitDate,
             "Total Waste": d?.totalWaste,
             "Total RDF": d?.totalRdf,
             "Total Compost": d?.totalCompost,
@@ -1201,22 +1192,22 @@ const DashboardPdUser = (props: any) => {
         historyPermissionDownload(printArr);
       }
     }
-    // setLoading(false);
+    setLoading(false);
   };
   // ***********************Collection Trend Graph API Methods******************
   // eslint-disable-next-line no-unused-vars
   const collectionTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    const params = {start: previousDay,end: time1,siteName: location };
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    // const params = {start: previousDay,end: time1,siteName: location };
     console.log("params", params);
     setLoading(true);
-    const result = await ApiClient.createApiClient().collectiontrendgraph(params);
-    // const result = await ApiClient.createApiClient().collectiontrendgraph(payload);
+    // const result = await ApiClient.createApiClient().collectiontrendgraph(params);
+    const result = await ApiClient.createApiClient().collectiontrendgraph(payload);
     // console.log("newlogscollect",result);
     // @ts-ignore
     if (result.status && result.data.status === true) {
@@ -1254,14 +1245,14 @@ const DashboardPdUser = (props: any) => {
   const processingTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    const params = {start: previousDay,end: time1,siteName: location };
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    // const params = {start: previousDay,end: time1,siteName: location };
     setLoading(true);
-    // const result = await ApiClient.createApiClient().processingtrendgraph(payload);
-    const result = await ApiClient.createApiClient().processingtrendgraph(params);
+    const result = await ApiClient.createApiClient().processingtrendgraph(payload);
+    // const result = await ApiClient.createApiClient().collectiontrendgraph(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1298,15 +1289,14 @@ const DashboardPdUser = (props: any) => {
   const distributionCompostTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    const params = {start: previousDay,end: time1,siteName: location };
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    // const params = {start: previousDay,end: time1,siteName: location };
     setLoading(true);
-    // const result = await ApiClient.createApiClient().MswDistributeCompostOutflow(payload);
-    const result = await ApiClient.createApiClient().MswDistributeCompostOutflow(params);
-    console.log("outflow",result);
+    const result = await ApiClient.createApiClient().MswDistributeCompostOutflow(payload);
+    // const result = await ApiClient.createApiClient().collectiontrendgraph(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1344,14 +1334,12 @@ const DashboardPdUser = (props: any) => {
   const distributionRdfTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().MswDistributeRDFOutflow(payload);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
-      const params = {start: previousDay,end: time1,siteName: location };
-     const result = await ApiClient.createApiClient().MswDistributeRDFOutflow(params);
+    const result = await ApiClient.createApiClient().MswDistributeRDFOutflow(payload);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1388,14 +1376,12 @@ const DashboardPdUser = (props: any) => {
   const distributionRecyclablesTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
-    // const result = await ApiClient.createApiClient().MswDistributeRecyclablesOutflow(payload);
-    const params = {start: previousDay,end: time1,siteName: location };
-    const result = await ApiClient.createApiClient().MswDistributeRecyclablesOutflow(params);
+    const result = await ApiClient.createApiClient().MswDistributeRecyclablesOutflow(payload);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1432,14 +1418,12 @@ const DashboardPdUser = (props: any) => {
   const distributionInertsTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
     setLoading(true);
-    // const result = await ApiClient.createApiClient().MswDistributeInertsOutflow(payload);
-    const params = {start: previousDay,end: time1,siteName: location };
-    const result = await ApiClient.createApiClient().MswDistributeInertsOutflow(params);
+    const result = await ApiClient.createApiClient().MswDistributeInertsOutflow(payload);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -1526,28 +1510,11 @@ const DashboardPdUser = (props: any) => {
       }
     }
   };
-  // const exportHistoryDataToExcelDownload = (downloadHistoryData) => {
-  //   let wb = XLSX.utils.book_new();
-  //   let ws = XLSX.utils.json_to_sheet(downloadHistoryData);
-  //   XLSX.utils.book_append_sheet(wb, ws, "History Data");
-  //   const wbout = XLSX.write(wb, { type: 'binary', bookType: "xlsx" });
-  //   const path = Platform.OS === 'ios' ? RNFS.DocumentDirectoryPath : RNFS.DownloadDirectoryPath;
-  //   RNFS.writeFile(path + '/msw_pd_history_data_' + new Date().getTime() + '.xlsx', wbout, 'ascii').then(() => {
-  //     {
-  //       Platform.OS === 'android' ?
-  //         ToastAndroid.showWithGravityAndOffset("Excel File Is Downloaded Successfully", ToastAndroid.SHORT, ToastAndroid.BOTTOM, 25, 50) :
-  //         Alert.alert("Excel File Is Downloaded Successfully");
-  //     }
-  //   }).catch((e) => {
-  //     console.log('Error', e);
-  //   });
-  // };
   const exportHistoryDataToExcelDownload = (downloadHistoryData) => {
     let wb = XLSX.utils.book_new();
     let ws = XLSX.utils.json_to_sheet(downloadHistoryData);
     XLSX.utils.book_append_sheet(wb, ws, "History Data");
     const wbout = XLSX.write(wb, { type: 'binary', bookType: "xlsx" });
-    // Write generated excel to Storage
     const path = Platform.OS === 'ios' ? RNFS.DocumentDirectoryPath : RNFS.DownloadDirectoryPath;
     RNFS.writeFile(path + '/msw_pd_history_data_' + new Date().getTime() + '.xlsx', wbout, 'ascii').then(() => {
       {
@@ -2593,7 +2560,7 @@ const DashboardPdUser = (props: any) => {
       {reminderModal()}
       {client4()}
       {client5()}
-      {/* {isLoading && <Loader />} */}
+      {isLoading && <Loader />}
     </View>
   );
 };

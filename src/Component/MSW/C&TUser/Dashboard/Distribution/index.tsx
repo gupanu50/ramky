@@ -73,7 +73,7 @@ const Distribution = (props: any) => {
               { Platform.OS === 'ios' ? <Text style={[styles.text,{left:-2}]}>
                 {/* @ts-ignore */}
                 {item.compost}
-              </Text> :   <Text style={[styles.text]}>
+              </Text> :   <Text style={[styles.text,{right:3}]}>
                 {/* @ts-ignore */}
                 {item.compost}
               </Text>}
@@ -84,7 +84,7 @@ const Distribution = (props: any) => {
              { Platform.OS === 'ios' ? <Text style={[styles.text,{left:4}]}>
                 {/* @ts-ignore */}
                 {item.rdf}
-              </Text> :  <Text style={[styles.text,{left:5}]}>
+              </Text> :  <Text style={[styles.text,{left:2}]}>
                 {/* @ts-ignore */}
                 {item.rdf}
               </Text>}
@@ -95,7 +95,7 @@ const Distribution = (props: any) => {
              { Platform.OS === 'ios' ?<Text style={[styles.text,{left:5}]}>
                 {/* @ts-ignore */}
                 {item.recyclables}
-              </Text>:<Text style={[styles.text,{left:6}]}>
+              </Text>:<Text style={[styles.text]}>
                 {/* @ts-ignore */}
                 {item.recyclables}
               </Text>}
@@ -106,7 +106,7 @@ const Distribution = (props: any) => {
               { Platform.OS === 'ios' ? <Text style={[styles.text,{left:4}]}>
                 {/* @ts-ignore */}
                 {item.inerts}
-              </Text>:<Text style={[styles.text,{left:4}]}>
+              </Text>:<Text style={[styles.text]}>
                 {/* @ts-ignore */}
                 {item.inerts}
               </Text>}

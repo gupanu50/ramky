@@ -22,7 +22,7 @@ const Collection = (props: any) => {
   };
   // ******************************GET Api********************
   const getCollectionApi = async () => {
-    // setLoading(true);
+    setLoading(true);
     const params = { siteName: location };
     const result = await ApiClient.createApiClient().IWMcollectdashboard(params);
     console.log("mytable",result);
@@ -48,7 +48,7 @@ const Collection = (props: any) => {
       setCollectionValue(displayArr);
     }
 
-    // setLoading(false);
+    setLoading(false);
   };
   return (
     <View >

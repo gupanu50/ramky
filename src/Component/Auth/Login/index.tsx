@@ -57,9 +57,7 @@ const Login = (props: any) => {
       };
       loginAction({ body: body, isLogin: true, navigation: navigation });
     }
-  };
- 
-  //*******************Password action ***************/
+  };//*******************Password action ***************/
   const passwordVisibleAction = () => {
     setSecure(!isSecure);
   };

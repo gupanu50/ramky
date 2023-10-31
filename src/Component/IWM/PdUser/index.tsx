@@ -318,13 +318,13 @@ const DashboardPdUser = (props: any) => {
   const iwmSummaryApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result: any = await ApiClient.createApiClient().iwmsummary(payload);
-     const params ={start:previousDay,end:time1,siteName:location};
-    const result: any = await ApiClient.createApiClient().iwmsummary(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result: any = await ApiClient.createApiClient().iwmsummary(payload);
+    //  const params ={start:previousDay,end:time1,siteName:location};
+    // const result: any = await ApiClient.createApiClient().iwmsummary(params);
     if (result.status && result.data.status === true) {
       const collected = result.data.data[0];
       //@ts-ignore
@@ -362,13 +362,13 @@ const DashboardPdUser = (props: any) => {
   const collectionTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().collectiontrendgraphiwm(payload);
-     const params ={start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().collectiontrendgraphiwm(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result = await ApiClient.createApiClient().collectiontrendgraphiwm(payload);
+    //  const params ={start:previousDay,end:time1,siteName:location};
+    // const result = await ApiClient.createApiClient().collectiontrendgraphiwm(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -404,13 +404,13 @@ const DashboardPdUser = (props: any) => {
   const disposalTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().analysistrendgraphiwm(payload);
-     const params ={start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().analysistrendgraphiwm(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result = await ApiClient.createApiClient().analysistrendgraphiwm(payload);
+    //  const params ={start:previousDay,end:time1,siteName:location};
+    // const result = await ApiClient.createApiClient().analysistrendgraphiwm(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -447,13 +447,13 @@ const DashboardPdUser = (props: any) => {
   const leftOverStockTrendApi = async (date, date1, date2) => {
     var previousDay = (moment(date).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date1).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().leftoverstocktrendgraphiwm(payload);
-     const params ={start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().leftoverstocktrendgraphiwm(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result = await ApiClient.createApiClient().leftoverstocktrendgraphiwm(payload);
+    //  const params ={start:previousDay,end:time1,siteName:location};
+    // const result = await ApiClient.createApiClient().leftoverstocktrendgraphiwm(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -490,13 +490,13 @@ const DashboardPdUser = (props: any) => {
   const historyApi = async (date3, date4, date2) => {
     var previousDay = (moment(date3).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date4).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().iwmpdhistory(payload);
-     const params ={start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().iwmpdhistory(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result = await ApiClient.createApiClient().iwmpdhistory(payload);
+    //  const params ={start:previousDay,end:time1,siteName:location};
+    // const result = await ApiClient.createApiClient().iwmpdhistory(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -515,13 +515,13 @@ const DashboardPdUser = (props: any) => {
   const historyDownloadApi = async (date3, date4, date2) => {
     var previousDay = (moment(date3).format('YYYY-MM-DD 00:00:00:000')) + " " + `Z`;
     var time1 = (moment(date4).format('YYYY-MM-DD 23:59:00:000')) + " " + `Z`;
-    // const payload = new FormData();
-    // payload.append("start", previousDay);
-    // payload.append("end", time1);
-    // payload.append("siteName", location);
-    // const result = await ApiClient.createApiClient().iwmpdhistory(payload);
-     const params ={start:previousDay,end:time1,siteName:location};
-    const result = await ApiClient.createApiClient().iwmpdhistory(params);
+    const payload = new FormData();
+    payload.append("start", previousDay);
+    payload.append("end", time1);
+    payload.append("siteName", location);
+    const result = await ApiClient.createApiClient().iwmpdhistory(payload);
+    //  const params ={start:previousDay,end:time1,siteName:location};
+    // const result = await ApiClient.createApiClient().iwmpdhistory(params);
     // @ts-ignore
     if (result.status && result.data.status === true) {
       // @ts-ignore
@@ -3202,12 +3202,11 @@ const styles = StyleSheet.create({
   },
   modalNew4: {
     height: height / 28,
-    width: width / 5.5,
+    width: width / 6.5,
     borderRadius: 10,
     marginHorizontal: 10,
     justifyContent: "center",
     alignItems: "center",
-    
   },
   modalNew5: {
     height: height / 15,

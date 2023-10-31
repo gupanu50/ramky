@@ -22,7 +22,7 @@ const LeftOverStock = (props: any) => {
   };
   // ******************************GET Api********************
   const getLeftOverStockApi = async () => {
-    // setLoading(true);
+    setLoading(true);
     const params = { siteName: location };
     const result = await ApiClient.createApiClient().IMWleftoverstockdashboard(params);
 
@@ -64,7 +64,7 @@ const LeftOverStock = (props: any) => {
       setDistributeValue(displayArr);
     }
 
-    // setLoading(false);
+    setLoading(false);
   };
   return (
     <View >
